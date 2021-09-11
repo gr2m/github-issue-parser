@@ -18,12 +18,6 @@ jobs:
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: "push to release branch"
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add dist
-          git commit -m "build"
-          git push https://github.com:${{ env.GITHUB_REPOSITORY }}.git:refs/heads/v1
+      - run: "git push https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git HEAD:refs/heads/v1"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
