@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gr2m/github-issue-praser.git"
+    "url": "git+https://github.com/gr2m/github-issue-parser.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gr2m/github-issue-praser/issues"
+    "url": "https://github.com/gr2m/github-issue-parser/issues"
   },
-  "homepage": "https://github.com/gr2m/github-issue-praser#readme",
+  "homepage": "https://github.com/gr2m/github-issue-parser#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
     "js-yaml": "^4.0.0"
